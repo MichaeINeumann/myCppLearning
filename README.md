@@ -16,9 +16,9 @@ This is a learning project to deepen your knowledge of the **C++** language and 
 ## Goal
 Learn how to work professionally in C++ - with a complete GitHub workflow, clean code and automated quality assurance.
 
-## ?? Beitrag leisten (Contributing)
+## Make a contribution
 
-Du möchtest mitmachen oder den Code verbessern?
+Would you like to join in or improve the code?
 
 1. **Forke** the project
 2. Create a branch:
@@ -37,10 +37,17 @@ Du möchtest mitmachen oder den Code verbessern?
     git push origin feature/was-auch-immer
 
 5. Make a pull request
+Each pull request is automatically tested by GitHub Actions. Only if all tests pass is it merged.
 
-?? Each pull request is automatically tested by GitHub Actions. Only if all tests pass is it merged.
+## Naming-Tipp für Branches
+| Art         | Example                     |
+| ----------- | --------------------------- |
+| Feature     | `feature/pow-support`       |
+| Bugfix      | `bugfix/pow-edgecase-nan`   |
+| Refactoring | `refactor/calculate-method` |
 
 ## Lizenz
 This project is under the [MIT-Lizenz](./LICENSE). 
 This project may be used freely - **without guarantee**. Anyone who finds it useful is welcome to fork or extend it.
+
 
