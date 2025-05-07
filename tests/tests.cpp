@@ -46,6 +46,13 @@ TEST_CASE("Division funktioniert", "[rechner]") {
     REQUIRE(result.value() == Catch::Approx(5.0));
 }
 
+TEST_CASE("Potenzierung funktioniert", "[rechner]") {
+    Rechner r(2.0, 3.0, 'p');
+    auto result = r.berechne();
+    REQUIRE(result.has_value());
+    REQUIRE(result.value() == Catch::Approx(8.0));
+}
+
 TEST_CASE("Division durch Null liefert kein Ergebnis", "[rechner]") {
     Rechner r(10.0, 0.0, '/');
     auto result = r.berechne();

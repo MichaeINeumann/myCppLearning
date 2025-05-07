@@ -30,9 +30,9 @@ char Rechner::readOperator()
     error err = INVALID_INPUT;
 
     while (err == INVALID_INPUT) {
-        std::cout << "Gib den Operator ein (+, -, *, /):" << std::endl;
+        std::cout << "Gib den Operator ein (+, -, *, /, pow):" << std::endl;
         std::cin >> op;
-        if (op == '+' || op == '-' || op == '*' || op == '/') {
+        if (op == '+' || op == '-' || op == '*' || op == '/' || op == 'p') {
             err = NONE; // Eingabe war gültig, Fehler zurücksetzen
         } else {
             std::cout << "Ungültige Eingabe. Bitte geben Sie einen gültigen Operator ein: " << std::endl;
@@ -60,6 +60,8 @@ double Rechner::calculate(const double &a, const double &b, const char &op, erro
                 err = DIVISION_BY_ZERO;
                 return 0; // oder eine andere Fehlerbehandlung
             }
+        case 'p':
+            return std::pow(a, b);
         default:
             err = INVALID_OPERATOR;
             return 0; // oder eine andere Fehlerbehandlung
