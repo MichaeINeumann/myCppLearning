@@ -1,0 +1,20 @@
+# Build Ordner
+/build/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Ausführbare Dateien
+*.exe
+*.out
+*.a
+*.so
+
+# Logs, temporäre Dateien
+*.log
+*.tmp
+
+# Catch2 Header (wenn separat heruntergeladen)
+catch_amalgamated.cpp
+catch_amalgamated.hpp
