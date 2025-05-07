@@ -68,8 +68,7 @@ TEST_CASE("Invalid operator returns no result", "[rechner]") {
 }
 
 TEST_CASE("VectorCalc funktioniert", "[vectorcalc]") {
-    std::list<int> inputList = {1, 2, 3};
-    VectorCalc vc(inputList);
+    VectorCalc vc({1, 2, 3, 4, 5});
     double result = vc.addVector();
-    REQUIRE(result == Catch::Approx(6.0));
+    REQUIRE(result == Catch::Approx(15.0));
 }

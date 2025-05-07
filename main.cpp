@@ -1,5 +1,8 @@
 #include "main.h"
 #include "Rechner.h"
+#include "VectorCalc.hpp"
+#include <list>
+#include <iostream>
 
 int main() {
     double a{0}, b{0};
@@ -7,6 +10,10 @@ int main() {
     const char exitChar{'q'};
     bool exit{false};
     char choice{};
+
+    VectorCalc myVectorCalc({1, 2, 3, 4, 5}); // Erstellen eines Objekts der Klasse VectorCalc
+    std::cout << "Die Summe der Vektoren ist: " << myVectorCalc.addVector() << std::endl; // Aufruf der Methode addVector()
+
 
     do {
 
