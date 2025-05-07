@@ -10,12 +10,14 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 # Füge die ausführbare Datei hinzu
 add_executable(simpleCalculator 
     main.cpp 
-    Rechner.cpp)
+    Rechner.cpp
+    VectorCalc.cpp)
 
 add_executable(runTests 
     tests/catch_amalgamated.cpp
     tests/tests.cpp
-    Rechner.cpp)
+    Rechner.cpp
+    VectorCalc.cpp)
 
 target_include_directories(runTests PRIVATE ${CMAKE_SOURCE_DIR}/tests)
 
