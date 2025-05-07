@@ -16,6 +16,30 @@ This is a learning project to deepen your knowledge of the **C++** language and 
 ## Goal
 Learn how to work professionally in C++ - with a complete GitHub workflow, clean code and automated quality assurance.
 
+## ?? Beitrag leisten (Contributing)
+
+Du möchtest mitmachen oder den Code verbessern?
+
+1. **Forke** the project
+2. Create a branch:
+    ```bash
+    git checkout -b feature/was-auch-immer
+
+3. Add your code and test locally:
+    ```bash
+    cmake -S . -B build -G Ninja
+    cmake --build build
+    ./build/runTests
+
+4. Commit + Push:
+    ```bash
+    git commit -m "feat: cooles neues Feature"
+    git push origin feature/was-auch-immer
+
+5. Make a pull request
+
+?? Each pull request is automatically tested by GitHub Actions. Only if all tests pass is it merged.
+
 ## Lizenz
 This project is under the [MIT-Lizenz](./LICENSE). 
 This project may be used freely - **without guarantee**. Anyone who finds it useful is welcome to fork or extend it.
