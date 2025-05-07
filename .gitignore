@@ -16,5 +16,5 @@ Makefile
 *.tmp
 
 # Catch2 Header (wenn separat heruntergeladen)
-catch_amalgamated.cpp
-catch_amalgamated.hpp
+#catch_amalgamated.cpp
+#catch_amalgamated.hpp
