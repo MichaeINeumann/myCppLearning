@@ -7,11 +7,24 @@ project(simpleCalculator VERSION 1.0)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
-# Füge die ausführbare Datei hinzu
+# Fuege die ausfuehrbare Datei hinzu
 add_executable(simpleCalculator 
     main.cpp 
     Rechner.cpp
-    VectorCalc.cpp)
+    VectorCalc.cpp
+    factory/Auto.hpp
+    factory/Fahrzeug.hpp
+    factory/FahrzeugFactory.hpp
+    factory/Lkw.hpp
+    factory/Motorrad.hpp)
+
+add_executable(testFactorys
+    factory/mainFactory.cpp
+    factory/Auto.hpp
+    factory/Fahrzeug.hpp
+    factory/FahrzeugFactory.hpp
+    factory/Lkw.hpp
+    factory/Motorrad.hpp)
 
 add_executable(runTests 
     tests/catch_amalgamated.cpp
